@@ -160,3 +160,19 @@ Run a test file:
 ```
 pytest tests/test_integration.py
 ```
+
+## Model Performance Summary
+
+**Logistic Regression:** ~75% accuracy (baseline).
+
+**Random Forest:** ~95% accuracy (chosen for deployment).
+
+**Feature Engineering:** Added required_run_rate & wickets_ratio. These features improved interpretability but gave minimal accuracy boost.
+
+**WHY These Models:**
+
+- Gives above average performance in limited features.
+
+- Less risk of overfitting than heavier ensemble methods as we have simpler data.
+
+- Practical balance between accuracy and simplicity.
